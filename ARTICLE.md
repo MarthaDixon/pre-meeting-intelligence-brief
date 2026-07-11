@@ -12,7 +12,7 @@ This isn't a generic meeting notes tool. It's built for the moment before the me
 
 The target user is any professional who regularly meets with cross-functional stakeholders — product managers, strategists, consultants or anyone who needs to influence people with different priorities. One click gives you the strategic edge that usually takes 30 minutes of research and mental preparation.
 
-## How You Built It
+## How I Built It
 
 I built this in a single day during the AWS Builder Weekend Challenge. My key architectural decision was simplicity: I wanted the fewest moving parts possible that would still produce a polished, working product.
 
@@ -50,7 +50,7 @@ Amazon Bedrock (Nova Lite v1.0)
 
 The Lambda Function URL provides a public HTTPS endpoint without needing API Gateway, reducing both complexity and cost. The entire application is serverless — there are no servers to manage and costs scale to zero when not in use.
 
-## What You Learned
+## What I Learned
 
 **Simplicity wins under time pressure.** My instinct was to build a React frontend on Amplify with API Gateway and DynamoDB. That's the "proper" architecture but for a weekend challenge, it would have tripled my setup time. A single Lambda serving both HTML and API responses is unconventional but perfectly functional — and it shipped in hours, not days.
 
